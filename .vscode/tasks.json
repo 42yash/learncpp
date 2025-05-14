@@ -5,6 +5,13 @@
             "label": "C/C++: g++ build active file",
             "command": "/usr/bin/g++",
             "args": [
+                "-Werror",
+                "-Wall",
+                "-Weffc++",
+                "-Wextra",
+                "-Wconversion",
+                "-Wsign-conversion",
+                "-pedantic-errors",
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
